@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>About</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/elegant-font/html-css/style.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body class="animsition">
+
+	<!-- Header -->
+	<header class="header1">
+		<!-- Header desktop -->
+		<div class="container-menu-header">
+		  <div class="topbar">
+			<!-- timer -->
+	
+			<script>(function () {
+				const second = 1000,
+				  minute = second * 60,
+				  hour = minute * 60,
+				  day = hour * 24;
+	
+				//I'm adding this section so I don't have to keep updating this pen every year :-)
+				//remove this if you don't need it
+				let today = new Date(),
+				  dd = String(today.getDate()).padStart(2, "0"),
+				  mm = String(today.getMonth() + 1).padStart(2, "0"),
+				  yyyy = today.getFullYear(),
+				  nextYear = yyyy + 1,
+				  dayMonth = "09/30/",
+				  birthday = dayMonth + yyyy;
+	
+				today = mm + "/" + dd + "/" + yyyy;
+				if (today > birthday) {
+				  birthday = dayMonth + nextYear;
+				}
+				//end
+	
+				const countDown = new Date(birthday).getTime(),
+				  x = setInterval(function () {
+	
+					const now = new Date().getTime(),
+					  distance = countDown - now;
+	
+					document.getElementById("days").innerText = Math.floor(distance / (day * 100)),
+					  document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+					  document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+					  document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+	
+					//do something later when date is reached
+					if (distance < 0) {
+					  document.getElementById("headline").innerText = "It's my birthday!";
+					  document.getElementById("countdown").style.display = "none";
+					  document.getElementById("content").style.display = "block";
+					  clearInterval(x);
+					}
+					//seconds
+				  }, 0)
+			  }());
+			</script>
+			<div>
+	
+			</div>
+			<div id="countdown">
+			  <ul style="display: inline;">
+				(Ramadan Special) Now or Never Deals are ending in:
+				<li class="timer"><span id="days"></span>days</li>
+				<li class="timer"><span id="hours"></span>Hours</li>
+				<li class="timer"><span id="minutes"></span>Minutes</li>
+				<li class="timer"><span id="seconds"></span>Seconds</li>
+			  </ul>
+			</div>
+	
+		  </div>
+		  <!-- <div class="topbar-social">
+			  <a href="https://www.facebook.com/AttarSoukk/" target="_blank" class="topbar-social-item fa fa-facebook"></a>
+			  <a href="https://www.instagram.com/Attar_souk/" target="_blank" class="topbar-social-item fa fa-instagram"></a>
+			  <a href="https://in.pinterest.com/attarsouk/" target="_blank" class="topbar-social-item fa fa-pinterest-p"></a>
+			</div>
+			<div class="topbar-child2">
+			  <span class="topbar-email">
+				attarsouk@gmail.com
+			  </span>
+			</div> -->
+	
+	
+	
+		  <div class="wrap_header">
+	
+			<!-- Logo -->
+			<a href="index.html" class="logo">
+			  <img src="images/icons/AttarSouk.png" alt="IMG-LOGO"> <label></label>
+			</a>
+	
+			<!-- Menu -->
+			<div class="wrap_menu">
+			  <nav class="menu">
+				<ul class="main_menu">
+				  <li>
+					<a href="index.html">Home</a>
+				  </li>
+	
+				  <li>
+					<a href="AllAttar.html">Attar</a>
+					<ul class="sub_menu">
+					  <li><a href="AllFragranceAttar.html">Natural Attars</a></li>
+					  <li><a href="Jannat-E-Firdus.html">Prayer Worship</a></li>
+					  <li><a href="AllAttar.html">Gifting</a></li>
+					  <li><a href="RoseAttar.html">Best sellers</a></li>
+					</ul>
+				  </li>
+				  
+	
+				  <li>
+					<a href="AllAttar.html">Fragrance</a>
+					<ul class="sub_menu">
+					  <li><a href="OudhAttar.html">Oudh</a></li>
+					  <li><a href="MuskAttar.html">Musk</a></li>
+					  <li><a href="RoseAttar.html">Rose</a></li>
+					  <li><a href="Jannat-E-Firdus.html">Arabic</a></li>
+					  <li><a href="Jannat-E-Firdus.html">Jannat-E-Firdus</a></li>
+					  <li><a href="AllFragranceAttar.html">All Fragrances</a></li>
+					</ul>
+				  </li>
+	
+				  <li>
+					<a href="AllAttar.html">Shop by Brand</a>
+					<ul class="sub_menu">
+					  <li><a href="ACO.html">ACO</a></li>
+					  <li><a href="AL-NUAIM.html">AL-NUIAM</a></li>
+					  <li><a href="Arochem.html">AROCHEM</a></li>
+					  <li><a href="Madni.html">MADNI</a></li>
+					  <li><a href="StJohn.html">ST. JOHN</a></li>
+					  <li><a href="Viwa.html">VIWA</a></li>
+					  <li><a href="ZIA.html">ZIA</a></li>
+					  <li><a href="AllAttar.html">All Brands</a></li>
+					</ul>
+				  </li>
+				  <li>
+					<a href="AllAttar.html">Quantity</a>
+					<ul class="sub_menu">
+					  <li><a href="2.5&3MLAttar.html">2.5ML & 3ML</a></li>
+					  <li><a href="6MLAttar.html">6ML</a></li>
+					  <li><a href="8MLAttar.html">8ML</a></li>
+					  <li><a href="9MLAttar.html">9ML</a></li>
+					  <li><a href="10MLAttar.html">10ML</a></li>
+					  <li><a href="25MLAttar.html">25ML</a></li>
+					</ul>
+				  </li>
+				  <li>
+					<a href="AllAttar.html">View All</a>
+				  </li>
+	
+				 
+	
+				  <li>
+					<a href="contact.html">Contact us</a>
+				  </li>
+				</ul>
+			  </nav>
+			</div>
+		  </div>
+		</div>
+	
+		<!-- Header Mobile -->
+		<div class="wrap_header_mobile">
+		  <!-- Logo moblie -->
+		  <a href="index.html" class="logo-mobile">
+			<img src="images/icons/AttarSouk.png" alt="IMG-LOGO">
+		  </a>
+	
+		  <!-- Button show menu -->
+		  <div class="btn-show-menu">
+			<!-- Header Icon mobile -->
+			<div class="header-icons-mobile">
+	
+			</div>
+	
+			<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+			  <span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			  </span>
+			</div>
+		  </div>
+		</div>
+	
+		<!-- Menu Mobile -->
+		<div class="wrap-side-menu">
+		  <nav class="side-menu">
+			<ul class="main-menu">
+			  <li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
+				<span class="topbar-child1">
+				  Free shipping for standard order over Rs. 500
+				</span>
+			  </li>
+	
+			  <li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
+				<div class="topbar-child2-mobile">
+				  <span class="topbar-email">
+					attarsouk@gmail.com
+				  </span>
+				</div>
+			  </li>
+	
+			  <li class="item-topbar-mobile p-l-10">
+				<div class="topbar-social-mobile">
+				  <a href="https://www.facebook.com/AttarSoukk/" class="topbar-social-item fa fa-facebook"></a>
+				  <a href="https://www.instagram.com/Attar_souk/" class="topbar-social-item fa fa-instagram"></a>
+				  <a href="https://in.pinterest.com/attarsouk/" class="topbar-social-item fa fa-pinterest-p"></a>
+				</div>
+			  </li>
+			  <li class="item-menu-mobile">
+				<a href="index.html">Home</a>
+			  </li>
+	
+			  <li>
+				<a href="AllAttar.html">Attar</a>
+				<ul class="sub_menu">
+				  <li><a href="AllFragranceAttar.html">Natural Attars</a></li>
+				  <li><a href="Jannat-E-Firdus.html">Prayer Worship</a></li>
+				  <li><a href="AllAttar.html">Gifting</a></li>
+				  <li><a href="RoseAttar.html">Best sellers</a></li>
+				</ul>
+			  </li>
+	
+			  <li class="item-menu-mobile">
+				<a href="AllAttar.html">Fragrances</a>
+				<ul class="sub-menu">
+				  <li><a href="OudhAttar.html">Oudh</a></li>
+				  <li><a href="MuskAttar.html">Musk</a></li>
+				  <li><a href="RoseAttar.html">Rose</a></li>
+				  <li><a href="Jannat-E-Firdus.html">Jannat-E-Firdus</a></li>
+				  <li><a href="AllFragranceAttar.html">All Fragrances</a></li>
+				</ul>
+				<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+			  </li>
+			  <li class="item-menu-mobile">
+				<a href="AllAttar.html">Quantity</a>
+				<ul class="sub-menu">
+				  <li><a href="2.5&3MLAttar.html">2.5ML & 3ML</a></li>
+				  <li><a href="6MLAttar.html">6ML</a></li>
+				  <li><a href="8MLAttar.html">8ML</a></li>
+				  <li><a href="9MLAttar.html">9ML</a></li>
+				  <li><a href="10MLAttar.html">10ML</a></li>
+				  <li><a href="25MLAttar.html">25ML</a></li>
+				</ul>
+	
+			  </li>
+			  <li class="item-menu-mobile">
+				<a href="AllAttar.html">Shop by Brand</a>
+				<ul class="sub-menu">
+				  <li><a href="ACO.html">ACO</a></li>
+				  <li><a href="AL-NUAIM.html">AL-NUAIM</a></li>
+				  <li><a href="Arochem.html">AROCHEM</a></li>
+				  <li><a href="Madni.html">MADNI</a></li>
+				  <li><a href="StJohn.html">ST. JOHN</a></li>
+				  <li><a href="Viwa.html">VIWA</a></li>
+				  <li><a href="ZIA.html">ZIA</a></li>
+				  <li><a href="AllAttar.html">All Brands</a></li>
+				</ul>
+				<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+			  </li>
+	
+			  <li class="item-menu-mobile">
+				<a href="AllAttar.html">By Quantity</a>
+				<ul class="sub-menu">
+				  <li><a href="2.5&3MLAttar.html">2.5ML & 3ML</a></li>
+				  <li><a href="6MLAttar.html">6ML</a></li>
+				  <li><a href="8MLAttar.html">8ML</a></li>
+				  <li><a href="9MLAttar.html">9ML</a></li>
+				  <li><a href="10MLAttar.html">10ML</a></li>
+				  <li><a href="25MLAttar.html">25ML</a></li>
+				</ul>
+	
+			  </li>
+	
+			  <li class="item-menu-mobile">
+				<a href="AllAttar.html">View All</a>
+			  </li>
+	
+			  
+	
+			  <li class="item-menu-mobile">
+				<a href="contact.html">Contact Us</a>
+			  </li>
+			</ul>
+		  </nav>
+		</div>
+	  </header>
+
+	<!-- Title Page -->
+	<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/heading-pages-06.jpg);">
+		<h2 class="l-text2 t-center">
+			About
+		</h2>
+	</section>
+
+	<!-- content page -->
+	<section class="bgwhite p-t-66 p-b-38">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 p-b-30">
+					<div class="hov-img-zoom">
+						<img src="images/AllFrag.jpg" alt="IMG-ABOUT">
+					</div>
+				</div>
+
+				<div class="col-md-8 p-b-30">
+					<h3 class="m-text26 p-t-15 p-b-16">
+						Our story
+					</h3>
+
+					<p class="p-b-28">
+						Our product designer, Ali had struggled with body odor for years, trying different products without success. One day, he stumbled upon a local attar shop and was intrigued by attar made from natural ingredients. After trying a sample, he loved it's smell, providing him with more confidence and less self-consciousness about his body odor. He spent countless hours experimenting with different ingredients until he developed a line of attars that he was proud of. With Pragnesh Gandhi, they created Attar Souk, that offers high-quality, natural attars.
+
+Attar Souk's attars are long-lasting and pure. We have numerous stories of how Attar Souk has improved their lives. For instance, Aisha, who had struggled with stress and anxiety, found that Attar Souk's natural fragrances helped her relax and feel more grounded. Ahmed, who was seeking a fragrance to wear during worship, was amazed by how long the scent lasted and how it helped him focus and feel more connected to his spirituality.
+					</p>
+
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Footer -->
+	<footer class="bg6 p-t-45 p-b-43 p-l-45 p-r-45">
+		<div class="flex-w p-b-90">
+			<div class="w-size6 p-t-30 p-l-15 p-r-15 respon3">
+				<h4 class="s-text12 p-b-30">
+					GET IN TOUCH
+				</h4>
+
+				<div>
+					<p class="s-text7 w-size27">
+						Any questions? Let us know in store at Katha Wala Mansion, Janjikar Street, Crawford Market, Crawford Market, Mumbai-400003. or email us on attarsouk@gmail.com
+					</p>
+
+					<div class="flex-m p-t-30">
+						<a href="#" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fa fa-instagram"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fa fa-pinterest-p"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fa fa-snapchat-ghost"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fa fa-youtube-play"></a>
+					</div>
+				</div>
+			</div>
+
+			
+
+
+			
+
+			
+		</div>
+
+		<div class="t-center p-l-15 p-r-15">
+			<a href="#">
+				<img class="h-size2" src="images/icons/paypal.png" alt="IMG-PAYPAL">
+			</a>
+
+			<a href="#">
+				<img class="h-size2" src="images/icons/visa.png" alt="IMG-VISA">
+			</a>
+
+			<a href="#">
+				<img class="h-size2" src="images/icons/mastercard.png" alt="IMG-MASTERCARD">
+			</a>
+
+			<a href="#">
+				<img class="h-size2" src="images/icons/express.png" alt="IMG-EXPRESS">
+			</a>
+
+			<a href="#">
+				<img class="h-size2" src="images/icons/discover.png" alt="IMG-DISCOVER">
+			</a>
+
+			<div class="t-center s-text8 p-t-20">
+				Copyright © 2023. All rights reserved. | Made with love <i class="fa fa-heart-o" aria-hidden="true"></i> by Bellegirl lifestyle pvt. ltd.
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top bg0-hov" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+	<!-- Container Selection -->
+	<div id="dropDownSelect1"></div>
+	<div id="dropDownSelect2"></div>
+
+
+
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+	<script type="text/javascript">
+		$(".selection-1").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect2')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>

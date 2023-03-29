@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Exclusive Range of Zia Attars at AttarSouk </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/elegant-font/html-css/style.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/noui/nouislider.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body class="animsition">
+
+	<!-- Header -->
+  <!-- Header -->
+  <header class="header1">
+    <!-- Header desktop -->
+    <div class="container-menu-header">
+      <div class="topbar">
+        <!-- timer -->
+
+        <script>(function () {
+            const second = 1000,
+              minute = second * 60,
+              hour = minute * 60,
+              day = hour * 24;
+
+            //I'm adding this section so I don't have to keep updating this pen every year :-)
+            //remove this if you don't need it
+            let today = new Date(),
+              dd = String(today.getDate()).padStart(2, "0"),
+              mm = String(today.getMonth() + 1).padStart(2, "0"),
+              yyyy = today.getFullYear(),
+              nextYear = yyyy + 1,
+              dayMonth = "09/30/",
+              birthday = dayMonth + yyyy;
+
+            today = mm + "/" + dd + "/" + yyyy;
+            if (today > birthday) {
+              birthday = dayMonth + nextYear;
+            }
+            //end
+
+            const countDown = new Date(birthday).getTime(),
+              x = setInterval(function () {
+
+                const now = new Date().getTime(),
+                  distance = countDown - now;
+
+                document.getElementById("days").innerText = Math.floor(distance / (day * 100)),
+                  document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                  document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                  document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                //do something later when date is reached
+                if (distance < 0) {
+                  document.getElementById("headline").innerText = "It's my birthday!";
+                  document.getElementById("countdown").style.display = "none";
+                  document.getElementById("content").style.display = "block";
+                  clearInterval(x);
+                }
+                //seconds
+              }, 0)
+          }());
+        </script>
+        <div>
+
+        </div>
+        <div id="countdown">
+          <ul style="display: inline;">
+            (Ramadan Special) Now or Never Deals are ending in:
+            <li class="timer"><span id="days"></span>days</li>
+            <li class="timer"><span id="hours"></span>Hours</li>
+            <li class="timer"><span id="minutes"></span>Minutes</li>
+            <li class="timer"><span id="seconds"></span>Seconds</li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- <div class="topbar-social">
+          <a href="https://www.facebook.com/AttarSoukk/" target="_blank" class="topbar-social-item fa fa-facebook"></a>
+          <a href="https://www.instagram.com/Attar_souk/" target="_blank" class="topbar-social-item fa fa-instagram"></a>
+          <a href="https://in.pinterest.com/attarsouk/" target="_blank" class="topbar-social-item fa fa-pinterest-p"></a>
+        </div>
+        <div class="topbar-child2">
+          <span class="topbar-email">
+            attarsouk@gmail.com
+          </span>
+        </div> -->
+
+
+
+      <div class="wrap_header">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <img src="images/icons/AttarSouk.png" alt="IMG-LOGO"> <label></label>
+        </a>
+
+        <!-- Menu -->
+        <div class="wrap_menu">
+          <nav class="menu">
+            <ul class="main_menu">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+              <li>
+                <a href="AllAttar.html">Attar</a>
+                <ul class="sub_menu">
+                  <li><a href="AllFragranceAttar.html">Natural Attars</a></li>
+                  <li><a href="Jannat-E-Firdus.html">Prayer Worship</a></li>
+                  <li><a href="AllAttar.html">Gifting</a></li>
+                  <li><a href="RoseAttar.html">Best sellers</a></li>
+                </ul>
+              </li>
+              
+
+              <li>
+                <a href="AllAttar.html">Fragrance</a>
+                <ul class="sub_menu">
+                  <li><a href="OudhAttar.html">Oudh</a></li>
+                  <li><a href="MuskAttar.html">Musk</a></li>
+                  <li><a href="RoseAttar.html">Rose</a></li>
+                  <li><a href="Jannat-E-Firdus.html">Arabic</a></li>
+                  <li><a href="Jannat-E-Firdus.html">Jannat-E-Firdus</a></li>
+                  <li><a href="AllFragranceAttar.html">All Fragrances</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="AllAttar.html">Shop by Brand</a>
+                <ul class="sub_menu">
+                  <li><a href="ACO.html">ACO</a></li>
+                  <li><a href="AL-NUAIM.html">AL-NUIAM</a></li>
+                  <li><a href="Arochem.html">AROCHEM</a></li>
+                  <li><a href="Madni.html">MADNI</a></li>
+                  <li><a href="StJohn.html">ST. JOHN</a></li>
+                  <li><a href="Viwa.html">VIWA</a></li>
+                  <li><a href="ZIA.html">ZIA</a></li>
+                  <li><a href="AllAttar.html">All Brands</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="AllAttar.html">Quantity</a>
+                <ul class="sub_menu">
+                  <li><a href="2.5&3MLAttar.html">2.5ML & 3ML</a></li>
+                  <li><a href="6MLAttar.html">6ML</a></li>
+                  <li><a href="8MLAttar.html">8ML</a></li>
+                  <li><a href="9MLAttar.html">9ML</a></li>
+                  <li><a href="10MLAttar.html">10ML</a></li>
+                  <li><a href="25MLAttar.html">25ML</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="AllAttar.html">View All</a>
+              </li>
+
+              
+
+              <li>
+                <a href="contact.html">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Mobile -->
+    <div class="wrap_header_mobile">
+      <!-- Logo moblie -->
+      <a href="index.html" class="logo-mobile">
+        <img src="images/icons/AttarSouk.png" alt="IMG-LOGO">
+      </a>
+
+      <!-- Button show menu -->
+      <div class="btn-show-menu">
+        <!-- Header Icon mobile -->
+        <div class="header-icons-mobile">
+
+        </div>
+
+        <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div class="wrap-side-menu">
+      <nav class="side-menu">
+        <ul class="main-menu">
+          <li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
+            <span class="topbar-child1">
+              Free shipping for standard order over Rs. 500
+            </span>
+          </li>
+
+          <li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
+            <div class="topbar-child2-mobile">
+              <span class="topbar-email">
+                attarsouk@gmail.com
+              </span>
+            </div>
+          </li>
+
+          <li class="item-topbar-mobile p-l-10">
+            <div class="topbar-social-mobile">
+              <a href="https://www.facebook.com/AttarSoukk/" class="topbar-social-item fa fa-facebook"></a>
+              <a href="https://www.instagram.com/Attar_souk/" class="topbar-social-item fa fa-instagram"></a>
+              <a href="https://in.pinterest.com/attarsouk/" class="topbar-social-item fa fa-pinterest-p"></a>
+            </div>
+          </li>
+          <li class="item-menu-mobile">
+            <a href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="AllAttar.html">Attar</a>
+            <ul class="sub_menu">
+              <li><a href="AllFragranceAttar.html">Natural Attars</a></li>
+              <li><a href="Jannat-E-Firdus.html">Prayer Worship</a></li>
+              <li><a href="AllAttar.html">Gifting</a></li>
+              <li><a href="RoseAttar.html">Best sellers</a></li>
+            </ul>
+          </li>
+
+          <li class="item-menu-mobile">
+            <a href="AllAttar.html">Fragrances</a>
+            <ul class="sub-menu">
+              <li><a href="OudhAttar.html">Oudh</a></li>
+              <li><a href="MuskAttar.html">Musk</a></li>
+              <li><a href="RoseAttar.html">Rose</a></li>
+              <li><a href="Jannat-E-Firdus.html">Jannat-E-Firdus</a></li>
+              <li><a href="AllFragranceAttar.html">All Fragrances</a></li>
+            </ul>
+            <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+          </li>
+          <li class="item-menu-mobile">
+            <a href="AllAttar.html">Quantity</a>
+            <ul class="sub-menu">
+              <li><a href="2.5&3MLAttar.html">2.5ML & 3ML</a></li>
+              <li><a href="6MLAttar.html">6ML</a></li>
+              <li><a href="8MLAttar.html">8ML</a></li>
+              <li><a href="9MLAttar.html">9ML</a></li>
+              <li><a href="10MLAttar.html">10ML</a></li>
+              <li><a href="25MLAttar.html">25ML</a></li>
+            </ul>
+
+          </li>
+          <li class="item-menu-mobile">
+            <a href="AllAttar.html">Shop by Brand</a>
+            <ul class="sub-menu">
+              <li><a href="ACO.html">ACO</a></li>
+              <li><a href="AL-NUAIM.html">AL-NUAIM</a></li>
+              <li><a href="Arochem.html">AROCHEM</a></li>
+              <li><a href="Madni.html">MADNI</a></li>
+              <li><a href="StJohn.html">ST. JOHN</a></li>
+              <li><a href="Viwa.html">VIWA</a></li>
+              <li><a href="ZIA.html">ZIA</a></li>
+              <li><a href="AllAttar.html">All Brands</a></li>
+            </ul>
+            <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+          </li>
+
+          <li class="item-menu-mobile">
+            <a href="AllAttar.html">By Quantity</a>
+            <ul class="sub-menu">
+              <li><a href="2.5&3MLAttar.html">2.5ML & 3ML</a></li>
+              <li><a href="6MLAttar.html">6ML</a></li>
+              <li><a href="8MLAttar.html">8ML</a></li>
+              <li><a href="9MLAttar.html">9ML</a></li>
+              <li><a href="10MLAttar.html">10ML</a></li>
+              <li><a href="25MLAttar.html">25ML</a></li>
+            </ul>
+
+          </li>
+
+          <li class="item-menu-mobile">
+            <a href="AllAttar.html">View All</a>
+          </li>
+
+          
+
+          <li class="item-menu-mobile">
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+	<!-- Title Page -->
+	<section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(images/heading-pages-02.jpg);">
+		<h2 class="l-text2 t-center">
+			Exclusive Range of ZIA Attar
+		</h2>
+		<p class="m-text13 t-center">
+<!-- 			New Arrivals Women Collection 2018
+ -->		</p>
+	</section>
+
+
+	<!-- Content page -->
+	<section class="bgwhite p-t-55">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-md-8 col-lg-12 p-b-50">
+					<!--  -->
+<div id='collection-component-1589895828485'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'bellegirl-lifestyle.myshopify.com',
+      storefrontAccessToken: '1d2b3be8f0cd597a348065b4a6978368',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('collection', {
+        id: '164244881456',
+        node: document.getElementById('collection-component-1589895828485'),
+        moneyFormat: 'Rs.%20%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px",
+          "width": "calc(25% - 20px)"
+        },
+        "img": {
+          "height": "calc(100% - 15px)",
+          "position": "absolute",
+          "left": "0",
+          "right": "0",
+          "top": "0"
+        },
+        "imgWrapper": {
+          "padding-top": "calc(75% + 15px)",
+          "position": "relative",
+          "height": "0"
+        }
+      },
+      "title": {
+        "font-family": "Playfair Display, serif",
+        "font-weight": "normal",
+        "font-size": "20px"
+      },
+      "button": {
+        "font-family": "Playfair Display, serif",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        ":hover": {
+          "background-color": "#b98c40"
+        },
+        "background-color": "#ce9b47",
+        ":focus": {
+          "background-color": "#b98c40"
+        },
+        "border-radius": "40px"
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px"
+      },
+      "price": {
+        "font-family": "Playfair Display, serif",
+        "font-size": "18px"
+      },
+      "compareAt": {
+        "font-family": "Playfair Display, serif",
+        "font-size": "15.299999999999999px"
+      },
+      "unitPrice": {
+        "font-family": "Playfair Display, serif",
+        "font-size": "15.299999999999999px"
+      },
+      "description": {
+        "font-family": "Montserrat, sans-serif"
+      }
+    },
+    "buttonDestination": "modal",
+    "contents": {
+      "options": false
+    },
+    "text": {
+      "button": "View product"
+    },
+    "googleFonts": [
+      "Playfair Display",
+      "Montserrat"
+    ],
+    "variantId": "all"
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Playfair Display, serif",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        ":hover": {
+          "background-color": "#b98c40"
+        },
+        "background-color": "#ce9b47",
+        ":focus": {
+          "background-color": "#b98c40"
+        },
+        "border-radius": "40px"
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px"
+      },
+      "title": {
+        "font-family": "Playfair Display, serif",
+        "font-weight": "normal"
+      },
+      "price": {
+        "font-family": "Playfair Display, serif"
+      },
+      "compareAt": {
+        "font-family": "Playfair Display, serif"
+      },
+      "unitPrice": {
+        "font-family": "Playfair Display, serif"
+      },
+      "description": {
+        "font-family": "Playfair Display, serif"
+      }
+    },
+    "googleFonts": [
+      "Playfair Display"
+    ]
+  },
+  "option": {
+    "styles": {
+      "label": {
+        "font-family": "Playfair Display, serif"
+      },
+      "select": {
+        "font-family": "Playfair Display, serif"
+      }
+    },
+    "googleFonts": [
+      "Playfair Display"
+    ]
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Playfair Display, serif",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        ":hover": {
+          "background-color": "#b98c40"
+        },
+        "background-color": "#ce9b47",
+        ":focus": {
+          "background-color": "#b98c40"
+        },
+        "border-radius": "40px"
+      },
+      "title": {
+        "color": "#4c4c4c"
+      },
+      "header": {
+        "color": "#4c4c4c"
+      },
+      "lineItems": {
+        "color": "#4c4c4c"
+      },
+      "subtotalText": {
+        "color": "#4c4c4c"
+      },
+      "subtotal": {
+        "color": "#4c4c4c"
+      },
+      "notice": {
+        "color": "#4c4c4c"
+      },
+      "currency": {
+        "color": "#4c4c4c"
+      },
+      "close": {
+        "color": "#4c4c4c",
+        ":hover": {
+          "color": "#4c4c4c"
+        }
+      },
+      "empty": {
+        "color": "#4c4c4c"
+      },
+      "noteDescription": {
+        "color": "#4c4c4c"
+      },
+      "discountText": {
+        "color": "#4c4c4c"
+      },
+      "discountIcon": {
+        "fill": "#4c4c4c"
+      },
+      "discountAmount": {
+        "color": "#4c4c4c"
+      }
+    },
+    "contents": {
+      "note": true
+    },
+    "googleFonts": [
+      "Playfair Display"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Playfair Display, serif",
+        "background-color": "#ce9b47",
+        ":hover": {
+          "background-color": "#b98c40"
+        },
+        ":focus": {
+          "background-color": "#b98c40"
+        }
+      },
+      "count": {
+        "font-size": "16px"
+      }
+    },
+    "googleFonts": [
+      "Playfair Display"
+    ]
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#4c4c4c"
+      },
+      "title": {
+        "color": "#4c4c4c"
+      },
+      "price": {
+        "color": "#4c4c4c"
+      },
+      "fullPrice": {
+        "color": "#4c4c4c"
+      },
+      "discount": {
+        "color": "#4c4c4c"
+      },
+      "discountIcon": {
+        "fill": "#4c4c4c"
+      },
+      "quantity": {
+        "color": "#4c4c4c"
+      },
+      "quantityIncrement": {
+        "color": "#4c4c4c",
+        "border-color": "#4c4c4c"
+      },
+      "quantityDecrement": {
+        "color": "#4c4c4c",
+        "border-color": "#4c4c4c"
+      },
+      "quantityInput": {
+        "color": "#4c4c4c",
+        "border-color": "#4c4c4c"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+					<!-- Product -->
+			</div>
+		</div>
+	</section>
+	<!-- Footer -->
+    <footer class="bg6 p-t-45 p-b-43 p-l-45 p-r-45">
+    <div class="flex-w p-b-90">
+      <div class="w-size6 p-t-30 p-l-15 p-r-15 respon3">
+        <h4 class="s-text12 p-b-30">
+          GET IN TOUCH
+        </h4>
+
+        <div>
+          <p class="s-text7 w-size27">
+            Any questions? Let us know in store at Katha Wala Mansion, Janjikar Street, Crawford Market, Crawford Market, Mumbai-400003. or email us on attarsouk@gmail.com
+          </p>
+
+          <div class="flex-m p-t-30">
+            <a href="https://www.facebook.com/AttarSoukk/" target="_blank" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
+            <a href="https://www.instagram.com/Attar_souk/" target="_blank" class="fs-18 color1 p-r-20 fa fa-instagram"></a>
+            <a href="https://in.pinterest.com/attarsouk/" target="_blank" class="fs-18 color1 p-r-20 fa fa-pinterest-p"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
+        <h4 class="s-text12 p-b-30">
+          Shop By Brand
+        </h4>
+
+        <ul>
+          <li class="p-b-9">
+            <a href="ACO.html" class="s-text7">
+              ACO
+            </a>
+          </li>
+          <li class="p-b-9">
+            <a href="AL-NUAIM.html" class="s-text7">
+              AL-NUAIM
+            </a>
+          </li>
+
+          <li class="p-b-9">
+            <a href="Arochem.html" class="s-text7">
+              AROCHEM
+            </a>
+          </li>
+          <li class="p-b-9">
+            <a href="Madni.html" class="s-text7">
+              MADNI
+            </a>
+          </li>
+
+          <li class="p-b-9">
+            <a href="StJohn.html" class="s-text7">
+              ST. JOHN
+            </a>
+          </li>
+
+          <li class="p-b-9">
+            <a href="Viwa.html" class="s-text7">
+              VIWA
+            </a>
+          </li>
+          <li class="p-b-9">
+            <a href="ZIA.html" class="s-text7">
+              ZIA
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
+        <h4 class="s-text12 p-b-30">
+          Shop By Fragrance
+        </h4>
+
+        <ul>
+          <li class="p-b-9">
+            <a href="OudhAttar.html" class="s-text7">
+              Oudh
+            </a>
+          </li>
+
+          <li class="p-b-9">
+            <a href="MuskAttar.html" class="s-text7">
+              Musk
+            </a>
+          </li>
+
+          <li class="p-b-9">
+            <a href="Jannat-E-Firdus.html" class="s-text7">
+              Jannat-e-Firdus
+            </a>
+          </li>
+
+          <li class="p-b-9">
+            <a href="RoseAttar.html" class="s-text7">
+              Rose
+            </a>
+          </li>
+
+          <li class="p-b-9">
+            <a href="AllFragranceAttar.html" class="s-text7">
+              All Fragrances
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
+        <h4 class="s-text12 p-b-30">
+          Quick Links
+        </h4>
+
+        <ul>
+          <li class="p-b-9">
+            <a href="About.html" class="s-text7">
+              About Us
+            </a>
+          </li>
+
+          <li class="p-b-9">
+            <a href="contact.html" class="s-text7">
+              Contact Us
+            </a>
+          </li>
+         
+        </ul>
+      </div>
+
+      
+    </div>
+ 
+    <div class="t-center p-l-15 p-r-15">
+      <a href="#">
+        <img class="h-size2" src="images/icons/paypal.png" alt="IMG-PAYPAL">
+      </a>
+
+      <a href="#">
+        <img class="h-size2" src="images/icons/visa.png" alt="IMG-VISA">
+      </a>
+
+      <a href="#">
+        <img class="h-size2" src="images/icons/mastercard.png" alt="IMG-MASTERCARD">
+      </a>
+
+      <a href="#">
+        <img class="h-size2" src="images/icons/express.png" alt="IMG-EXPRESS">
+      </a>
+
+      <a href="#">
+        <img class="h-size2" src="images/icons/discover.png" alt="IMG-DISCOVER">
+      </a>
+
+      <div class="t-center s-text8 p-t-20">
+        Copyright © 2023 All rights reserved. |  Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://bellegirllifestyle.in" target="_blank">BelleGirl LifeStyle</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top bg0-hov" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+	<!-- Container Selection -->
+	<div id="dropDownSelect1"></div>
+	<div id="dropDownSelect2"></div>
+
+
+
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+	<script type="text/javascript">
+		$(".selection-1").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect2')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
+	<script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/sweetalert/sweetalert.min.js"></script>
+	<script type="text/javascript">
+		$('.block2-btn-addcart').each(function(){
+			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+			$(this).on('click', function(){
+				swal(nameProduct, "is added to cart !", "success");
+			});
+		});
+
+		$('.block2-btn-addwishlist').each(function(){
+			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+			$(this).on('click', function(){
+				swal(nameProduct, "is added to wishlist !", "success");
+			});
+		});
+	</script>
+
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/noui/nouislider.min.js"></script>
+	<script type="text/javascript">
+		/*[ No ui ]
+	    ===========================================================*/
+	    var filterBar = document.getElementById('filter-bar');
+
+	    noUiSlider.create(filterBar, {
+	        start: [ 50, 200 ],
+	        connect: true,
+	        range: {
+	            'min': 50,
+	            'max': 200
+	        }
+	    });
+
+	    var skipValues = [
+	    document.getElementById('value-lower'),
+	    document.getElementById('value-upper')
+	    ];
+
+	    filterBar.noUiSlider.on('update', function( values, handle ) {
+	        skipValues[handle].innerHTML = Math.round(values[handle]) ;
+	    });
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
