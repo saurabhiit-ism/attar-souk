@@ -200,8 +200,9 @@
         $('.video-mo-01').children('iframe')[0].src = srcOld;
         $('.video-mo-01').css('opacity','0');
     });
-    if ("serviceWorker" in navigator) {
+    
+})(jQuery);
+if ("serviceWorker" in navigator) {
         // register service worker
         navigator.serviceWorker.register("service-worker.js");
       }
-})(jQuery);
